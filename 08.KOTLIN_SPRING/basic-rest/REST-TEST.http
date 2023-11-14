@@ -1,0 +1,18 @@
+### CREATE User
+POST localhost:8080/v1/users
+Content-Type: application/json
+
+{"userName" : "UncleBae", "age":  40, "phone": "010-9630-0655"}
+
+### PUT User
+PUT localhost:8080/v1/users
+Content-Type: application/json
+
+{"userId":  "1", "userName":  "UncleBae2"}
+
+### GET User
+GET localhost:8080/v1/users/1
+
+### DELETE User
+DELETE localhost:8080/v1/users/1
+
