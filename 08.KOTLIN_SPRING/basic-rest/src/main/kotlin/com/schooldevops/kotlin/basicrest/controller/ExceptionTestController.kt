@@ -26,7 +26,7 @@ class ExceptionTestController {
 
 
     @GetMapping("/ctl")
-    fun controllerLevelException(): String{
+    fun controllerLevelException(): String {
         return exceptionTestService.throwExceptionByOption("NotImpl")
     }
 

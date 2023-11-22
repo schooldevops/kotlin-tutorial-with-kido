@@ -37,3 +37,6 @@ GET http://localhost:8080/except/global/C01
 GET http://localhost:8080/except/global/C02
 ### Exception Handler 08
 GET http://localhost:8080/except/global/C03
+
+### GetUser
+GET http://localhost:8080/v1/users/1
