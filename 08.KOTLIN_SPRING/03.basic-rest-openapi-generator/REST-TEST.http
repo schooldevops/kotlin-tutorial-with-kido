@@ -1,0 +1,45 @@
+### CREATE User
+POST localhost:8080/v1/users
+Content-Type: application/json
+
+{"userName" : "UncleBae", "age":  40, "phone": "010-9630-0655"}
+
+### PUT User
+PUT localhost:8080/v1/users
+Content-Type: application/json
+
+{"userId":  "1", "userName":  "UncleBae2"}
+
+### GET User
+GET localhost:8080/v1/users/1
+
+### DELETE User
+DELETE localhost:8080/v1/users/1
+
+### Exception Handler 01
+GET http://localhost:8080/except/ctl
+
+### Exception Handler 02
+GET http://localhost:8080/except/checked
+
+### Exception Handler 03
+GET http://localhost:8080/except/except-resolver
+
+### Exception Handler 04
+GET http://localhost:8080/except/excep-resolve/NotImpl
+### Exception Handler 05
+GET http://localhost:8080/except/excep-resolve/IllegalArgs
+
+
+### Exception Handler 06
+GET http://localhost:8080/except/global/C01
+### Exception Handler 07
+GET http://localhost:8080/except/global/C02
+### Exception Handler 08
+GET http://localhost:8080/except/global/C03
+
+### GetUser
+GET http://localhost:8080/v1/users/1
+
+### OpenAPI
+GET http://localhost:8080/greet

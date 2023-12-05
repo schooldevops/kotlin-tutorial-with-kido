@@ -24,7 +24,7 @@ class UserController(@Autowired val userService: UserService) {
 
         while (headerNames.hasMoreElements()) {
             val nextElement = headerNames.nextElement()
-            if (nextElement != null && nextElement.toLowerCase().equals("content-type")) {
+            if (nextElement != null && nextElement.lowercase() == ("content-type")) {
 
             }
         }
